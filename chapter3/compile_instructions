@@ -1,0 +1,1 @@
+$ mpicc −g −Wall −o mpi_hello mpi_hello.c
