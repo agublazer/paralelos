@@ -1,1 +1,8 @@
+Compile:
 $ mpicc −g −Wall −o mpi_hello mpi_hello.c
+Many systems also support program startup with mpiexec:
+$ mpiexec −n <number of processes> ./mpi hello
+So to run the program with one process, we’d type
+$ mpiexec −n 1 ./mpi hello
+and to run the program with four processes, we’d type
+$ mpiexec −n 4 ./mpi hello
