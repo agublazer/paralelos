@@ -44,9 +44,7 @@ int main()
 
     for(t=0;t<thread_count;t++)
     {
-        pthread_join(threads[t], NULL);
-        //printf("Return from thread %ld is : %f\n",t, *(float*)status);      
-        //tot_in+=my_sum;            //keep track of the total in count     
+        pthread_join(threads[t], NULL);   
     }
     printf("sum: %f \n", 4.0*sum);
     printf("\n");
